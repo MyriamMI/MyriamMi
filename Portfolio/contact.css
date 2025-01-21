@@ -1,0 +1,118 @@
+:root {
+    --bg-color: #28221e;
+    --text-color: #fdfbfd;
+    --main-color: #ad6e5f;
+    --second-bg-color: #41110b;
+}
+
+html {
+    font-size: 60%;    
+}
+.heading {
+    margin-top: 50px;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+}
+.heading > span {
+    padding: 0 15px;
+    color: var(--main-color);
+ }
+
+ main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    width: 70%;
+    font-size: 2rem;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    border: #ad6e5f solid 2px;
+    background: var(--text-color);
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact form .box {
+    display: flex;
+}
+
+.contact form .box .content {
+
+    margin: 0.8rem 0;
+    gap: 5px;
+    display: flex;
+}
+
+.contact form .box .content input{
+    width: 100%;
+   height: 50%;
+   padding: 1.5rem;
+   font-size: 1.5rem;
+   color: var(--bg-color);
+   background: transparent;
+   border-radius: 0.5rem;
+   border: 0.2rem solid var(--main-color);
+   
+}
+.content .message {
+    width: 90%;
+    height: 50%;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--bg-color);
+    background: transparent;
+    border-radius: 0.5rem;
+    border: 0.2rem solid var(--main-color);
+    margin-top: 10px;
+}
+.btn-box {
+    display: flex;
+    margin-top: 15px;
+    height: 4rem;
+    transition: .3s;
+}
+.btn-box .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 100%;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    font-size: 1.5rem;
+    border-radius: 10px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    border: none;
+}
+.btn-box .btn:hover {
+    background-color: var(--second-bg-color);
+    color: var(--text-color);
+    transition: 1s;
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 50%;
+    }
+    
+}
+@media (max-width: 950px) {
+    .contact {
+        height: 50vh;
+    }
+    section {
+        padding: 10rem 4% 2rem;
+    }
+}

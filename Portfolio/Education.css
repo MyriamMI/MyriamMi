@@ -1,0 +1,65 @@
+:root {
+    --bg-color: #c8c8c6a2;
+    --text-color:#41110b ;
+    --main-color: #765d5793 ;
+    --second-bg-color: #fdfdfd ;
+}
+
+html {
+    background-image: url(../Portfolio/background-skill1.jpg);
+    background-repeat: no-repeat;
+    font-size: 60%; 
+}
+
+.header{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+h2 {
+    color: var(--text-color);
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+.education-box {
+    width: 90%;
+    height: 90%;
+    padding: .3rem 1rem;
+    
+}
+
+.education-content {
+    display: flex;
+    flex-direction: column;
+    border: .3rem solid var(--main-color);
+    border-radius: .6rem;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    background-color: var(--main-color);
+}
+
+.experience {
+    width: 90%;
+    height: 90%;
+    padding: .3rem 1rem;
+}
+
+.experience-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    padding-left: 2rem;
+    background-color: var(--main-color);
+}
+
