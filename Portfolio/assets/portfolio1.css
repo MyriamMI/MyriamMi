@@ -73,7 +73,7 @@ body {
 }
 
 .home {
-    background-image: url(../Portfolio/background.png);
+    background-image: url(../assets/layout/img/background.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -209,13 +209,13 @@ footer {
 }
 
 @media (max-width: 670px) {
-    
+
     #menu-icon {
         display: block;
         color: black;
         position: relative;
         font-size: 3rem;
-        padding:0;
+        padding: 0;
     }
 
     .navBar {

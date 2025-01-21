@@ -11,7 +11,7 @@ html {
 
 
 body {
-    background-image: url(../Portfolio/background-skill1.jpg);
+    background-image: url(../assets/layout/img/background-skill1.jpg);
     background-repeat: none;
     color: var(--text-color);
     box-sizing: border-box;
