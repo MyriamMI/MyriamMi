@@ -1,0 +1,42 @@
+.btn-container {
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 8px 14px;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.btn:hover {
+  background: #0056b3; /* Bleu plus foncé au survol */
+  cursor: pointer;
+}
+/* --- Boutons Éditer / Supprimer --- */
+.btn-edit,
+.btn-delete {
+  padding: 6px 12px;
+  font-size: 0.9em;
+  border-radius: 0.42rem;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s ease;
+  margin-right: 6px;
+}
+
+.btn-edit {
+  background-color: #f9c62d;
+}
+
+.btn-edit:hover {
+  background-color: #e0a800;
+}
+
+.btn-delete {
+  background-color: #dc3545; 
+}
+
+.btn-delete:hover {
+  background-color: #c82333;
+}

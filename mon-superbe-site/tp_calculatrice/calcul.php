@@ -1,7 +1,7 @@
 <?php
 
 /** Traite la soumission du formulaire de calculatrice.
- *
+ 
  * @return array État du formulaire avec les clés :
  *   - 'soumis'  : bool, si le formulaire a été soumis
  *   - 'erreurs' : array, liste des messages d'erreur (vide si ok)
