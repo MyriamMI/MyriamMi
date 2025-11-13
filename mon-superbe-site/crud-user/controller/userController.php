@@ -59,7 +59,7 @@ function getUsers() {
 }
 
 function saveUser($user) {
-    saveUserDAO($user);
+    saveUserDAO($user); 
 }
 
 function updateUser($user) {

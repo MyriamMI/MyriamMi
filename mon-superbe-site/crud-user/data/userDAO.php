@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . "/config.php";
 
-function getUsersDAO(){
+function getUsersDAO(){ 
 
     $connection = get_connection();
     $sql = "SELECT * FROM users"; 
@@ -65,7 +65,7 @@ function saveUserDAO($user){
     
 
 }
-// ... autres fonctions DAO
+// autres fonctions DAO
 function getUser($id){
     $connection = get_connection();
     $sql = "SELECT * FROM users WHERE id = ?";
@@ -78,7 +78,7 @@ function getUser($id){
     $connection->close();
     return $user;
 }
-function deleteUserDAO($id) {
+function deleteUserDAO($id) {   
     $connection = get_connection();
     $stmt = $connection->prepare("DELETE FROM users WHERE id = ?");
     $stmt->bind_param("i", $id);
@@ -91,7 +91,7 @@ function deleteUserDAO($id) {
     return $deleted; // true si suppression réussie sinon false 
 }
 
-function updateUserDAO($user) {
+function updateUserDAO($user) {  
     // 1) Calcul âge
     $birthDate = new DateTime($user['ddn']);
     $age = $birthDate->diff(new DateTime())->y;
@@ -106,7 +106,7 @@ function updateUserDAO($user) {
     if ($check->num_rows > 0) {
         $check->close();
         $conn->close();
-        // Message propre pour ton UI
+        
         die("Cet email est déjà utilisé par un autre compte.");
     }
     $check->close();
@@ -132,7 +132,7 @@ function updateUserDAO($user) {
     );
 
     if (!$stmt->execute()) {
-        // 1062 = violation d'unicité MySQL (au cas où)
+        // 1062 = violation d'unicité MySQL
         if ($conn->errno == 1062) {
             die("Cet email est déjà utilisé par un autre compte.");
         }
